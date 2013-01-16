@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"lqez"
+EMAIL = "ez.amiryo@gmail.com"
 SITENAME = u"Feature creep designer"
 SITEURL = 'http://lqez.github.com/blog'
 
@@ -17,8 +18,10 @@ THEME = '42signals-pelican-theme'
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/lqez'),
-          ('Facebook', 'http://facebook.com/ez.amiryo'),)
+SOCIAL = (('twitter', 'http://twitter.com/lqez'),
+          ('facebook', 'http://facebook.com/ez.amiryo'),
+          ('soundcloud', 'http://soundcloud.com/lqez'),
+          ('github', 'http://github.com/lqez'),)
 
 DEFAULT_PAGINATION = 5
 STATIC_PATHS = ["images", ]

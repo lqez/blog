@@ -6,13 +6,15 @@ sys.path.append('.')
 from pelicanconf import *
 
 SITEURL = 'http://lqez.github.com/blog'
+PLUGINS = ['pelican.plugins.gravatar',]
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
+GOOGLE_ANALYTICS = 'UA-37711911-1'
 
-# Uncomment following line for absolute URLs in production:
-#RELATIVE_URLS = False
+FACEBOOK_APPID = '465940413466203'
+FACEBOOK_LOCALE = 'ko_KR'
 
-#DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = "UA-37711911-1"
+FACEBOOK_COMMENT = True
+FACEBOOK_COMMENT_NUM_POST = 5
+FACEBOOK_COMMENT_WIDTH = 600

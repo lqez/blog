@@ -40,5 +40,5 @@ _single underscores_
 **double asterisks**
 __double underscores__
 
-![screenshot of htop](/images/test.png "optional title")
+![screenshot of htop](|filename|/images/test.png "optional title")
 
