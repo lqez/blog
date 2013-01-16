@@ -3,20 +3,20 @@
 
 AUTHOR = u"lqez"
 SITENAME = u"Feature creep designer"
-SITEURL = ''
+SITEURL = 'http://lqez.github.com/blog'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Asia/Seoul'
 
 DEFAULT_LANG = 'ko'
 
 # Blogroll
-LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-          ('Python.org', 'http://python.org'),
-          ('Jinja2', 'http://jinja.pocoo.org'),
-          ('You can modify those links in your config file', '#'),)
+#LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
+#          ('Python.org', 'http://python.org'),
+#          ('Jinja2', 'http://jinja.pocoo.org'),
+#          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'http://twitter.com/lqez'),
+          ('Facebook', 'http://facebook.com/ez.amiryo'),)
 
 DEFAULT_PAGINATION = 5
