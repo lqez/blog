@@ -28,3 +28,8 @@ pip-log.txt
 
 # Pelican
 output
+themes
+*.pid
+
+# OS X
+.DS_Store

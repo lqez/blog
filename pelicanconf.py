@@ -8,6 +8,7 @@ SITEURL = 'http://lqez.github.com/blog'
 TIMEZONE = 'Asia/Seoul'
 
 DEFAULT_LANG = 'ko'
+THEME = '42signals-pelican-theme'
 
 # Blogroll
 #LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
@@ -20,3 +21,4 @@ SOCIAL = (('Twitter', 'http://twitter.com/lqez'),
           ('Facebook', 'http://facebook.com/ez.amiryo'),)
 
 DEFAULT_PAGINATION = 5
+STATIC_PATHS = ["images", ]
