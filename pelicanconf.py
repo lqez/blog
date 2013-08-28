@@ -4,7 +4,7 @@
 #AUTHOR = u"lqez"
 EMAIL = "ez.amiryo@gmail.com"
 SITENAME = u"Feature creep designer"
-SITEURL = 'http://lqez.github.com/blog'
+SITEURL = 'http://lqez.github.io/blog'
 
 TIMEZONE = 'Asia/Seoul'
 
@@ -24,3 +24,5 @@ THEME = '42signals-pelican-theme'
 
 DEFAULT_PAGINATION = 5
 STATIC_PATHS = ["images", ]
+
+PLUGINS = ['pelican.plugins.embed_tweet']
