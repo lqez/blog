@@ -51,8 +51,8 @@ Solution
   2. 프로세스 A에서 문제의 프로세스 ID를 받을 때까지 계속해서 자식 프로세스 B를 포크한다.
   3. 지정된 ID를 얻으면 프로세스 A, B를 모두 종료한다.
   4. Upstart는 이것이 정상적인 프로세스 종료로 판단하고 혼란 상황에서 빠져나온다.
-  5. 문제 해결!
 
+우여곡절 끝에 문제 해결.
 
     $ initctl list | grep one
     one/flower start/running, process 14810
