@@ -2,6 +2,7 @@ Title: Lie makes worse career
 Date: 2014-07-16
 Lang: ko
 Tags: diary
+Status: draft
 
 
 구인 과정에서 있었던 불미스러운 일을 포스팅 하였으나,
