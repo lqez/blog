@@ -2,6 +2,7 @@ Title: Sketch and Draft
 Date: 2016-08-31
 Lang: ko
 Tags: branding, design, concept, sketch
+Image: images/2016-08/sketch-and-draft.jpg
 
 소셜 미디어에 사진을 올리며 스케치와 시안 사이라고 적었다.
 ![sketch-and-draft.jpg](./images/2016-08/sketch-and-draft.jpg)
