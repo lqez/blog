@@ -30,4 +30,4 @@ Apache 를 Nginx 로 대체함과 동시에, PHP 를 위해 [php-fpm](http://php
 * nginx + php-fpm tune : http://www.if-not-true-then-false.com/2011/nginx-and-php-fpm-configuration-and-optimizing-tips-and-tricks/
 
 * [Google Apps Directory Sync Administration Guide(in PDF)](http://www.google.com/support/enterprise/static/gapps/docs/admin/en/gads/admin/)
-![Screen Shot of GADS](./static/images/gads_01.png)
+![Screen Shot of GADS](./images/gads_01.png)

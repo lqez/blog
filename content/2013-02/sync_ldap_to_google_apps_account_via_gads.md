@@ -25,7 +25,7 @@ GADS는 단방향 즉, LDAP에서 GADS로의 동기화만을 제공한다. 동�
 
 GADS Configuration Tool은 자바를 이용한 GUI로 작성되어 있는데, 현재는 Windows / Linux 용만 제공된다. 이 툴을 통해 설정한 내용은 XML로 저장되고, 이 파일은 플랫폼 무관하게 사용할 수 있으므로, 일단 가상 머신의 Windows로 설정을 완료한 후에, 설정 파일을 복사하여 Linux에서 사용하였다.
 
-![Screen Shot of GADS](./static/images/gads_01.png)
+![Screen Shot of GADS](./images/gads_01.png)
 
 Linux용 GADS는 커맨드라인에서 설치하면 동의항목이 HTML로 출력되지만, 계속 엔터키를 입력해 넘기며 진행하면 설치가 가능하다.
 root 계정으로 설치하는 경우에 /usr/local/GoogleAppsDirSync 에 설치가 되고, 이 디렉토리 아래에 있는 `sync-cmd` 쉘 스크립트를 통해 동기화를 수행하면 된다.

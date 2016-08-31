@@ -4,7 +4,7 @@ Lang: ko
 Tags: branding, design, concept, sketch
 
 소셜 미디어에 사진을 올리며 스케치와 시안 사이라고 적었다.
-![sketch-and-draft.jpg](./static/images/2016-08/sketch-and-draft.jpg)
+![sketch-and-draft.jpg](./images/2016-08/sketch-and-draft.jpg)
 
 모 대학교 취업 박람회에서 사용할 홍보물을 제작하기 위해 간단히 스케치한 것과 그 스케치를 바탕으로 만든 시안이었다.
 

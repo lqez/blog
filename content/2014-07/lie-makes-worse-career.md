@@ -14,4 +14,4 @@ Status: draft
 당사자와의 문제를 끌어내 확대 해석 가능하도록 만든 점에 대해 사과드립니다.
 아래는 당사자와 대화한 내용을 동의하에 기록한 것입니다.
 
-![conv.png](./static/images/2014-07/conv.png)
+![conv.png](./images/2014-07/conv.png)

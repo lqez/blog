@@ -3,7 +3,7 @@ Date: 2013-08-28
 Lang: ko
 Tags: diary
 
-![A drawing on my birthday](./static/images/2013-08/birthday.jpg)
+![A drawing on my birthday](./images/2013-08/birthday.jpg)
 
 언제부턴가 생일에 특별한 의미를 부여하거나, 챙겨서 뭘 하진 않게 되었다.
 어차피 날짜라는 건 연속적인 시간을 인간의 기준에 맞춰 불연속적인 개념으로 부르는 것일 뿐이라고 생각한다.
