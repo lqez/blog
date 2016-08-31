@@ -6,7 +6,7 @@ sys.path.append('.')
 from pelicanconf import *
 
 SITEURL = 'http://lqez.github.io/blog'
-PLUGINS = ['pelican.plugins.gravatar', 'pelican.plugins.embed_tweet',]
+PLUGINS = ['pelican.plugins.embed_tweet',]
 
 RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = True
