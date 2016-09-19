@@ -3,7 +3,9 @@ Date: 2016-09-12
 Lang: ko
 Tags: plating, platance, hackathon
 
-외부로 알려진 행사의 개요는 이렇다. 링크: <http://www.bloter.net/archives/262994>
+외부로 알려진 행사의 개요는 이렇다. 
+
+ - ‘플레이탕스 해커톤’ 개최: <http://www.bloter.net/archives/262994>
 
 시간이 지나, 돌이켜 봤을 때 성공한 많은 일들은 거창한 계획에서 시작하는 것이 아니라, 작은 아이디어나 작은 시도에서 시작한다고 생각한다.
 그래서 작은 일들에 늘 관심을 가지고, 남들과 다른 생각이나 행동을 하는 사람들에게 큰 가치를 느끼고 무언가 같이 해보고 싶은 마음을 늘 가지고 있다.
@@ -38,8 +40,8 @@ Tags: plating, platance, hackathon
 나와 같이 회사 하드웨어 부서에서 일하고 있는 파덕님의 [NHN NEXT](https://www.nhnnext.org/) 동기인 져니님이 플레이팅의 소프트웨어 엔지니어라는 얘기를 들었다.
 파덕님이 플레이팅 메뉴라도 웹 페이지로 보여주면 안되겠냐고 문의를 했는데, API를 줄테니 직접 해보라는 답변을 듣고 리액트로 직접 작성해버렸다(?)
 
- - 사건의 시작 : [파덕님 페이스북 포스팅](https://www.facebook.com/hello.heesu/posts/906485259456004)
- - 그렇게 만들어진 전용 페이지 : <http://smartstudy.plating.co.kr/>
+ - 사건의 시작: [파덕님 페이스북 포스팅](https://www.facebook.com/hello.heesu/posts/906485259456004)
+ - 그렇게 만들어진 전용 페이지: <http://smartstudy.plating.co.kr/>
 
 ![platance-03.jpg](./images/2016-09/platance-03.jpg)
 
