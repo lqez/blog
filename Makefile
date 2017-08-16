@@ -70,6 +70,6 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 github: publish
-	cd $(OUTPUTDIR) && git add . && git add -u .&& git commit && git push origin master
+	cd $(OUTPUTDIR) && git add . && git add -u .&& git commit -m "Update blog" && git push origin master
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github
