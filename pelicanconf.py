@@ -4,7 +4,7 @@
 #AUTHOR = u"lqez"
 EMAIL = "ez.amiryo@gmail.com"
 SITENAME = u"Feature creep designer"
-#SITEURL = 'http://lqez.github.io/blog'
+#SITEURL = 'https://lqez.github.io/blog'
 
 TIMEZONE = 'Asia/Seoul'
 

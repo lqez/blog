@@ -5,7 +5,7 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://lqez.github.io/blog'
+SITEURL = 'https://lqez.github.io/blog'
 PLUGINS = ['pelican.plugins.embed_tweet',]
 
 RELATIVE_URLS = False
