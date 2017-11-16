@@ -71,3 +71,8 @@ OAuth 등을 사용하면 이메일 주소를 사용자 이름에 넣는 경우�
  - <https://code.djangoproject.com/ticket/20631>
  - [What is the maximum length of a valid email address?](https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address)
  - [RFC5321 #4.5.3.1, Size Limits and Minimums](https://tools.ietf.org/html/rfc5321#section-4.5.3)
+
+덧3) MySQL의 InnoDB 엔진에서 문자열에 대한 인덱스는 767바이트로 제한되어 있고,
+1글자에 4바이트를 사용하는 `utf8mb4` 인코딩에서는 767 ÷ 4 ≈ 191 이기 때문에 191자로 제한된다.
+ 
+ - <https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-conversion.html>
