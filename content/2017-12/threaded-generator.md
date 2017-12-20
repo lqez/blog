@@ -61,11 +61,13 @@ for repo in generator_repos(github):
     # do something
 ```
 
-위에서 작성한 Threade generator로 바꾼 것이 현재의 상태다.
+위에서 작성한 Threaded generator로 바꾼 것이 현재의 상태다.
 ```
 for repo in ThreadedGenerator(generator_repos(github)):
     # do something
 ```
+
+반복문 내에 느린 동작이 자주 포함되는 CLI 도구에서는 반복적으로 사용해볼만한 패턴이라고 생각된다.
 
 ----
 
