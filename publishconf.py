@@ -8,7 +8,7 @@ from pelicanconf import *
 SITEURL = 'https://lqez.github.io/blog'
 PLUGINS = ['pelican.plugins.embed_tweet',]
 
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 DELETE_OUTPUT_DIRECTORY = True
 
 APPLE_TOUCH_ICON = 'fcd-57.png'
