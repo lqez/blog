@@ -46,26 +46,26 @@ lqez/yuna was deleted.
 ----
 
 최초의 코드는 아래와 같았다.
-```
-for repo in github.get_user().get_repos():
-    # do something
-```
+
+    :::python
+    for repo in github.get_user().get_repos():
+        # do something
 
 이를 제너레이터로 바꾸면 아래와 같이 바뀌고,
-```
-def generator_repos(github):
-    for repo in github.get_user().get_repos():
-        yield repo
 
-for repo in generator_repos(github):
-    # do something
-```
+    :::python
+    def generator_repos(github):
+        for repo in github.get_user().get_repos():
+            yield repo
+
+    for repo in generator_repos(github):
+        # do something
 
 위에서 작성한 Threaded generator로 바꾼 것이 현재의 상태다.
-```
-for repo in ThreadedGenerator(generator_repos(github)):
-    # do something
-```
+
+    :::python
+    for repo in ThreadedGenerator(generator_repos(github)):
+        # do something
 
 반복문 내에 느린 동작이 자주 포함되는 CLI 도구에서는 반복적으로 사용해볼만한 패턴이라고 생각된다.
 
