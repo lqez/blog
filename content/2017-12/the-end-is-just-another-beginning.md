@@ -1,7 +1,7 @@
 Title: The end is just another beginning
 Date: 2017-12-21
 Lang: ko
-Image: "./images/2017-12/last-moment-mba.jpg"
+Image: images/2017-12/last-moment-mba.jpg
 
 ![The Last Moment](./images/2017-12/last-moment-mba.jpg)
 
