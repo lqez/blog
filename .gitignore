@@ -30,6 +30,7 @@ pip-log.txt
 # Pelican
 output
 themes
+plugins
 *.pid
 
 # OS X
