@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The length of Django username</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=0.82, minimum-scale=0.82" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="og:url" content="//lqez.github.io/blog/the-length-of-django-username.html"/>
+    <meta property="og:title" content="The length of Django username"/>
+
+    <link rel="stylesheet" href="//lqez.github.io/blog/theme/css/main.css" type="text/css" />
+    <link href="//lqez.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Feature creep designer Atom Feed" />
+    <link rel="apple-touch-icon" href="static/images/icons/fcd-57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="static/images/icons/fcd-72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="static/images/icons/fcd-114.png"/>
+
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" media="all" href="//lqez.github.io/blog/css/ie.css"/>
+        <script src="//lqez.github.io/blog/js/IE8.js" type="text/javascript"></script><![endif]-->
+
+    <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" media="all" href="//lqez.github.io/blog/css/ie6.css"/><![endif]-->
+</head>
+<body id="index" class="home">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=465940413466203";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <header id="banner" class="body">
+        <h1><a href="//lqez.github.io/blog/">Feature creep designer </a></h1>
+        <h2 id="greeting">Happy day.</h2>
+    </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="//lqez.github.io/blog/the-length-of-django-username.html" rel="bookmark"
+           title="Permalink to The length of Django username">The length of Django username</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-11-16T00:00:00+09:00">
+                Thu 16 November 2017
+        </abbr>
+
+</footer><!-- /.post-info -->      <p>오래 전, <a href="https://www.djangoproject.com/">Django</a>에서 제공하는 사용자 모델의 이름을 저장하는 기본 필드의 길이가 왜 30자인가에 대해 의문을 가진 적이 있었다.
+필드의 길이가 짧거나 길어서 그런 생각을 했던건 아니고, 왜 하필 ‘30’ 일까에 대한 의문이었다.
+물론 한국 사람들의 이름만 생각하면 30자면 충분하다. 한국 국적을 가진 사람 중에 가장 긴 이름을 가진 사람은 다음과 같다.</p>
+<ul>
+<li>‘박 하늘별님구름햇님보다사랑스러우리’(17자)</li>
+<li>‘프라이인드로스테쭈젠댄마리소피아수인레나테엘리자벳피아루이제’(30자)</li>
+</ul>
+<p>출처: <a href="http://www.hani.co.kr/arti/society/society_general/399615.html">http://www.hani.co.kr/arti/society/society_general/399615.html</a></p>
+<hr>
+<p>그 뒤로 잊고 살았는데, 얼마 전 발표된 <a href="https://docs.djangoproject.com/en/dev/releases/2.0/">Django 2.0 RC 릴리즈 노트</a>를 보다가,
+<a href="https://docs.djangoproject.com/en/dev/releases/2.0/#abstractuser-last-name-max-length-increased-to-150">사용자 이름 필드의 길이가 150자로 바뀐다</a>는 항목이 눈에 띄었다.</p>
+<p>하필이면, 왜 150자일까? 30자도 이상했지만 150자도 이상해서 <a href="https://git-scm.com/docs/git-blame">git blame</a>을 통해 길이를 바꾼 커밋을 찾아보니,
+예전보다 늘렸다는게 아니라 150자로 줄였다는 커밋이 마지막이었다.</p>
+<ul>
+<li><a href="https://github.com/django/django/commit/780bddf75b93784470a2e352ed44ee35a751d667">Decreased User.username maxlength to 150 characters.</a></li>
+</ul>
+<p>그리고 같이 커밋된 도움말의 문서를 보면 다음과 같이 설명되어 있다.</p>
+<blockquote>
+<p>We considered an increase to 254 characters to more easily allow the use of
+email addresses (which are limited to 254 characters) as usernames but rejected
+it due to a MySQL limitation.  When using the <code>utf8mb4</code> encoding (recommended
+for proper Unicode support), MySQL can only create unique indexes with 191
+characters by default. Therefore, if you need a longer length, please use a
+custom user model.</p>
+</blockquote>
+<p>이전에 254자로 늘린 이력이 있었는데, MySQL 등에서 유니코드 문자를 저장하는데 주로 쓰이는 <code>utf8mb4</code> 인코딩을 사용하는 경우에
+인덱스 지정에 문제가 생길 수 있어 150자로 줄이는 선택을 했던 모양이다.
+254자로는 언제 늘렸나 보아하니, 2년 전에 이미 머지가 되었던 이력이 있다. </p>
+<ul>
+<li><a href="https://github.com/django/django/pull/5497">Increased User.username max_length to 254 characters.</a></li>
+</ul>
+<p>그리고 이전에 이미 사용자 이름을 늘리는 것에 대한 PR이 올라왔었지만, 도움말 등을 작성하는게 미진하여 머지되지는 않았다.
+오픈소스 프로젝트에서는 정말 흔한 일이라고 생각한다.</p>
+<ul>
+<li><a href="https://github.com/django/django/pull/4250">Fixed #20846 -- Change username max_length to 254</a></li>
+</ul>
+<p>드디어, 사용자 이름을 늘리는 것에 대한 <a href="https://code.djangoproject.com/ticket/20846">티켓 #20846</a>을 찾았다. 
+이 티켓을 읽어보면 다음과 같은 이유로 사용자 이름의 길이를 늘리자고 건의하고 있다.</p>
+<blockquote>
+<p>Nowadays it is common to use e-mail addresses as usernames (especially if using external auth sources such as OAuth),
+but while the email field is reasonably long (75), the 30 characters for the username seems too short for modern sites.</p>
+</blockquote>
+<p>OAuth 등을 사용하면 이메일 주소를 사용자 이름에 넣는 경우가 흔한데, 이메일 필드의 길이는 상대적으로 긴 75자인데 비해 사용자 이름은 짧으니 늘려보자는 의견이다.
+뿐만 아니라, 사용자 이름에 대한 프로그래머들의 흔한 착각에 대해서도 언급하고 있다.
+해당 글에서는 프로그래머들에 가지고 있는 흔한 가정들이 잘못되었음을 꼬집고 있다.</p>
+<ul>
+<li><a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">Falsehoods Programmers Believe About Names</a></li>
+</ul>
+<p>자, 이제 거의 마지막까지 왔다. 위 글은 존 그레이엄-커밍의 블로그 글을 링크하고 있다.
+대부 존 그레이엄-커밍이 웹 서비스에 가입하다 자신이 이름에 잘못된 문자(invalid characters)가 있다는 메세지에 분노하여 남긴 글이다.
+이름에 하이픈(-)이 포함되어 있어서 여러 사이트에서 문제를 겪어왔던 것 같다.</p>
+<ul>
+<li><a href="http://blog.jgc.org/2010/06/your-last-name-contains-invalid.html">Your last name contains invalid characters</a></li>
+</ul>
+<hr>
+<p>덧1) 어느 나라나 악플러는 있기 마련인 것 같다. 존 그레이엄-커밍의 블로그 포스팅에도 아래와 같은 사려깊지 못한 댓글이 달려있다. 흠.</p>
+<blockquote>
+<p>Change your name. Not that big of a deal.</p>
+</blockquote>
+<p>덧2) 이메일 필드는 여전히 75자일까? 그렇지 않다. 사용자 이름 필드가 늘어나기 1년 전에 이미 254자로 늘어나 있었다.</p>
+<ul>
+<li><a href="https://github.com/django/django/pull/2867">Fixed #20631 -- Increased the default EmailField max_length to 254.</a></li>
+<li><a href="https://code.djangoproject.com/ticket/20631">https://code.djangoproject.com/ticket/20631</a></li>
+<li><a href="https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address">What is the maximum length of a valid email address?</a></li>
+<li><a href="https://tools.ietf.org/html/rfc5321#section-4.5.3">RFC5321 #4.5.3.1, Size Limits and Minimums</a></li>
+</ul>
+<p>덧3) MySQL의 InnoDB 엔진에서 문자열에 대한 인덱스는 767바이트로 제한되어 있고,
+1글자에 4바이트를 사용하는 <code>utf8mb4</code> 인코딩에서는 767 ÷ 4 ≈ 191 이기 때문에 191자로 제한된다.</p>
+<ul>
+<li><a href="https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-conversion.html">https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-conversion.html</a></li>
+</ul><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<footer class="post-info-footer">
+        <p>
+        In <a href="//lqez.github.io/blog/category/2017-11.html">2017-11</a>. 
+        </p>
+</footer><!-- /.post-info -->    </div><!-- /.entry-content -->
+    <div class="fb-comments" data-href="//lqez.github.io/blog/the-length-of-django-username.html" data-width="0" data-num-posts="5"></div>
+
+  </article>
+</section>
+    <section id="extras" class="body">
+    </section><!-- /#extras -->
+
+    <footer id="contentinfo" class="body">
+    <!--
+        <nav><ul>
+            <li ><a href="//lqez.github.io/blog/category/2013-02.html">2013-02</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2013-04.html">2013-04</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2013-05.html">2013-05</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2013-08.html">2013-08</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2013-10.html">2013-10</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2014-07.html">2014-07</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2016-08.html">2016-08</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2016-09.html">2016-09</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2017-05.html">2017-05</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2017-08.html">2017-08</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2017-10.html">2017-10</a></li>
+            <li class="active"><a href="//lqez.github.io/blog/category/2017-11.html">2017-11</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2017-12.html">2017-12</a></li>
+            <li ><a href="//lqez.github.io/blog/category/2018-01.html">2018-01</a></li>
+            <li ><a href="//lqez.github.io/blog/category/uncategorized.html">Uncategorized</a></li>
+        </ul></nav>
+        -->
+        <address id="about" class="vcard body">
+        Published by <a href="http://getpelican.com/">Pelican</a> / <a href="http://python.org">Python</a>.
+        <p id="theme"><a href="https://github.com/lqez/42signals-pelican-theme">42 signals theme by lqez</a></p>
+        </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37711911-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+<script language="javascript">
+var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var dayOfWeek = weekday[new Date().getDay()];
+document.getElementById('greeting').innerHTML = "Happy " + dayOfWeek + ".";
+</script>
+</html>
