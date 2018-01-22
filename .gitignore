@@ -35,3 +35,6 @@ plugins
 
 # OS X
 .DS_Store
+
+# pyenv
+.python-version
