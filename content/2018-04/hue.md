@@ -1,6 +1,7 @@
 Title: 10 things to know before using Philips Hue
 Date: 2018-04-06
 Lang: ko
+Image: images/2018-04/hue-muscari.jpg
 
 ![A photo of home](./images/2018-04/hue-hallway.jpg)
 이번에 이사하며 필립스의 스마트 조명 시스템인 [휴(Hue)](https://www2.meethue.com)를 사용하며 알게 된 몇 가지 내용을 정리해본다.
