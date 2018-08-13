@@ -1,6 +1,7 @@
 Title: Book, again by code.
 Date: 2018-08-13
 Lang: ko
+Image: images/2018-08/pyconkr-2018-book.jpg
 
 ### PyCon Korea
 
