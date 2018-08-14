@@ -43,11 +43,11 @@ Image: images/2018-08/pyconkr-2018-book.jpg
 }
 
 /* 좌우 페이지를 다르게 지정할 수 있다 */
-@page:right{
+@page:right {
   margin: 56pt 46pt 56pt 50pt;
 }
 
-@page:left{
+@page:left {
   margin: 56pt 50pt 56pt 46pt;
 }
 ```
@@ -142,3 +142,5 @@ Adobe InDesign 등의 전문 도구로 작업하는 쪽에서 보자면, 결과�
   - 데이터를 대량으로 입력할 때 유리하다. Adobe InDesign에서도 [Data merge 기능](https://helpx.adobe.com/indesign/using/data-merge.html)을 통해 외부로부터 데이터를 불러와 본문에 삽입, 대체하는 것이 가능하지만 파이썬 프로그래머라면 Jinja를 다루는 것이 더 편리하다.
 
 한 권을 만드는 것이 아니라 여러 권을 만들게 된다면 코드로 빌드할 수 있는 환경이 얻는 이점이 더 분명해질 것으로 생각한다. 행사 일정에 맞추느라 Paged Media 에 대한 충분한 이해와 깔끔한 편집을 못 한 것이 아쉽다. 
+
+![Photo of draft printing](./images/2018-08/pyconkr-2018-book-res.jpg)
