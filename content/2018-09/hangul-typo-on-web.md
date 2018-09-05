@@ -69,7 +69,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
 ```css
 {
   color          : #222;
-  font-family    : Gulim, Dotum, Helvetica, sans-serif ;
+  font-family    : Gulim, Dotum, Helvetica, sans-serif;
   font-size      : 14px;
   letter-spacing : 0;
   line-height    : 23.8px; /* 1.7 */
@@ -95,7 +95,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
 ```css
 {
   color          : #333;
-  font-family    : "Noto Sans Light", "Malgun Gothic", sans-serif ;
+  font-family    : "Noto Sans Light", "Malgun Gothic", sans-serif;
   font-size      : 14.6667px;   /* 11pt */
   letter-spacing : 0.8px;
   line-height    : 29.3333px;   /* 22pt */
@@ -144,7 +144,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
   letter-spacing : -1px;
   line-height    : 30.6px;  /* 1.8em */
   text-align     : justify;
-  text-rendering : optimizeLegibility ;
+  text-rendering : optimizeLegibility;
 }
 ```
 
@@ -159,15 +159,15 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
 ```css
 {
   color          : #222;
-  font-family    : "Apple SD Gothic Neo", "Droid Sans", "Spoqa Han Sans", Arial, sans-serif ;
+  font-family    : "Apple SD Gothic Neo", "Droid Sans", "Spoqa Han Sans", Arial, sans-serif;
   font-size      : 16px;    /* 1rem */
   font-weight    : 300;
   line-height    : 30.4px;  /* 1.9rem */
   word-break     : keep-all;
-  text-rendering : optimizeLegibility ;
-  text-shadow    : rgba(0, 0, 0, 0.004) 1px 1px 1px ;
+  text-rendering : optimizeLegibility;
+  text-shadow    : rgba(0, 0, 0, 0.004) 1px 1px 1px;
 
-  -webkit-font-smoothing: antialiased ;
+  -webkit-font-smoothing: antialiased;
 }
 ```
 
@@ -229,7 +229,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
 ```css
 {
   color           : #333;
-  font-family     : "Helvetica Neue", "Apple SD Gothic Neo", arial, 나눔고딕, "Nanum Gothic", 돋움, Dotum, Tahoma, Geneva, sans-serif ;
+  font-family     : "Helvetica Neue", "Apple SD Gothic Neo", arial, 나눔고딕, "Nanum Gothic", 돋움, Dotum, Tahoma, Geneva, sans-serif;
   font-size       : 13px;
   letter-spacing  : -0.39px;  /* -.03em*/
   line-height     : 23.4px;   /* 1.8em */
