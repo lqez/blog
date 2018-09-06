@@ -15,6 +15,7 @@ DELETE_OUTPUT_DIRECTORY = True
 APPLE_TOUCH_ICON = 'fcd-57.png'
 APPLE_TOUCH_ICON_72 = 'fcd-72.png'
 APPLE_TOUCH_ICON_114 = 'fcd-114.png'
+SITE_IMAGE = 'static/images/icon/fcd.png'
 
 GOOGLE_ANALYTICS = 'UA-37711911-1'
 
