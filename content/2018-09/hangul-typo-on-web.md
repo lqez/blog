@@ -34,7 +34,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
   color          : #333;
   font-family    : AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, 돋움, sans-serif;
   font-size      : 17px;      /* inline style */
-  letter-spacing : -0.32px;   /* -0.02em */
+  letter-spacing : -0.34px;   /* -0.02em */
   line-height    : 27.625px;  /* 1.625 */
 }
 ```
@@ -60,7 +60,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
 ```
 
 #### 네이트 뉴스 – <http://news.nate.com/>
-![Naver news](./images/2018-09/ht-nate.png)
+![Nate news](./images/2018-09/ht-nate.png)
 네이트 뉴스는 평소에는 잘 방문하지 않지만, 위 두 뉴스 사이트를 제외한 다른 신문, 매체 사이트는 광고 때문에 본문을 읽을 엄두가 나지 않아 울며 겨자먹기로 알아보았다.
 
 요즘의 사이트 답지 않게 `굴림`, `돋움`만 지정하고 있으며, 서체 크기도 `14px`로 최근의 추세보다는 다소 작게 지정되어 있다.
@@ -149,7 +149,7 @@ CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 �
 ```
 
 #### 인디포스트 – <https://www.indiepost.co.kr/>
-![the pinch](./images/2018-09/ht-indiepost.png)
+![indiepost](./images/2018-09/ht-indiepost.png)
 읽어보면 좋은 글이 많고, 하단에 관련된 글들도 연관성이 높아 음악가들에 대해 알아보기 좋은 사이트라고 생각한다.
 하지만 브런치와 마찬가지로 본문에 사용하는 서체의 획이 너무 가늘어 읽기에 힘이 든다.
 게다가 이유는 알 수 없지만, 본문에 `text-shadow` 를 지정하고 있다.
