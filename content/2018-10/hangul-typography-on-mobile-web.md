@@ -2,7 +2,7 @@ Title: 모바일 웹 사이트들의 한글 타이포그래피
 Date: 2018-10-03
 Lang: ko
 Slug: hangul-typography-on-mobile-web
-Image: images/2018-10/htm-webinsepctor.jpg
+Image: images/2018-10/htm-webinspector.jpg
 
 [지난 글](https://lqez.github.io/blog/hangul-typo-on-web.html)에서는 한글이 주로 사용되는 웹 사이트들을 데스크탑 기기(이하 일반)에서 봤을 때 어떻게 표현하는지 정리했었다. 이번에는 모바일 기기에서 해당 웹 사이트들을 접속했을 때 어떻게 한글 서식을 지정하는지 알아보았다.
 CSS에서 주석에 적힌 값이 실제 CSS로 지정한 값이며, 별도의 표시가 없는 경우 계산된 값과 지정된 값이 같음을 의미한다.
