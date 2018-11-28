@@ -26,4 +26,4 @@ DEFAULT_PAGINATION = 5
 STATIC_PATHS = ["images", ]
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['pelican-embed-tweet.embed_tweet']
+PLUGINS = ['pelican-embed-tweet.embed_tweet', 'pelican-check-ext-link', ]
