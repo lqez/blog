@@ -195,7 +195,7 @@ Slug: chrome-dev-tool-101
     - Group similar: 같은 출력이 반복되는 경우, 왼쪽에 반복된 출력 회수를 표시하고 중복하여 출력하지 않는다.
     - [Eager evaluation](https://developers.google.com/web/updates/2018/05/devtools#eagerevaluation): 콘솔 명령어 입력 후, 엔터를 치기 전에 이제까지 입력된 내용을 바탕으로 미리 수행한 결과를 보여준다.
   - **Debugger**
-    - Disable JavaScript: 자바스크립트를 수행하지 않는다.
+    - Disable JavaScript: 자바스크립트를 실행하지 않는다.
 
 
 이 글에서 언급된 내용은 크롬 개발자 도구의 극히 일부에 불과하므로 궁금한 내용은 항상 [구글 크롬 개발자 도구 도움말](https://developers.google.com/web/tools/chrome-devtools/)을 참조하는 것이 좋다.
