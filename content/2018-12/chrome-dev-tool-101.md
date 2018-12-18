@@ -10,11 +10,14 @@ Slug: chrome-dev-tool-101
 ### 개발자 도구 활성화
 
 ![Chrome menu](./images/2018-12/chrome-dev-tool-101-menu.png)
-개발자 도구는 크롬 메뉴바에서 개발자 도구를 선택해서 활성화 할 수 있다. 개발자 도구의 메뉴는 왼쪽부터 차례대로 아래의 기능을 가진다.
+개발자 도구는 크롬 메뉴바에서 개발자 도구를 선택해서 활성화 할 수 있다.
 
   - 단축키: `⌘ + Shift + I` 또는 `Ctrl + Shift + I`
 
 ![Developer tool](./images/2018-12/chrome-dev-tool-101-toolbar.png)
+개발자 도구의 메뉴는 왼쪽부터 차례대로 아래의 기능을 가진다.
+
+----
 
 #### 요소 선택
 
@@ -171,6 +174,7 @@ Slug: chrome-dev-tool-101
 ![Audits](./images/2018-12/chrome-dev-tool-101-audits.png)
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/)를 통한 페이지 검사 결과를 표시하고 저장할 수 있다. 기본적인 페이지의 성능과 [PWA](https://developers.google.com/web/progressive-web-apps/), [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization), [접근성](https://www.w3.org/standards/webdesign/accessibility)과 관련된 점수를 제공하므로, [Page speed](https://developers.google.com/speed/)와 함께 사용하여 품질 높은 페이지를 만드는데 참조하면 좋다. 
 
+----
 
 ### 추가 기능 (More tools)
 ![More tools](./images/2018-12/chrome-dev-tool-101-moretools.png)
@@ -202,6 +206,7 @@ Slug: chrome-dev-tool-101
   - [Request blocking](https://developers.google.com/web/updates/2017/04/devtools-release-notes#block-requests): 패턴 매칭을 통해 특정 요청만 제한하는 테스트가 가능하다.
   - [Sensors](https://developers.google.com/web/tools/chrome-devtools/device-mode/device-input-and-sensors): 모바일 장치의 위치 정보와 가속도 센서를 에뮬레이션.
  
+----
 
 ### 설정 (Settings)
 ![Settings](./images/2018-12/chrome-dev-tool-101-settings.png)
@@ -225,6 +230,7 @@ Slug: chrome-dev-tool-101
   - **Debugger**
     - Disable JavaScript: 자바스크립트를 실행하지 않는다.
 
+----
 
 이 글에서 언급된 내용은 크롬 개발자 도구의 극히 일부에 불과하므로 궁금한 내용은 항상 [구글 크롬 개발자 도구 도움말](https://developers.google.com/web/tools/chrome-devtools/)을 참조하는 것이 좋다.
 
