@@ -60,7 +60,7 @@ Slug: chrome-dev-tool-101
 
 ###### 스타일 계산 결과 (Computed)
 ![Computed style](./images/2018-12/chrome-dev-tool-101-computed.png)
-선택된 요소에 적용된 최종 스타일을 확인할 수 있다. 스타일 필터와 마찬가지로 필터를 통해 원하는 스타일믄 추려서 볼 수 있다. 특정 스타일을 확장하면 어떤 선택자들을 통해 최종적으로 연산된 값인지 확인할 수 있다.
+선택된 요소에 적용된 최종 스타일을 확인할 수 있다. 스타일 필터와 마찬가지로 필터를 통해 원하는 스타일만 추려서 볼 수 있다. 특정 스타일을 확장하면 어떤 선택자들을 통해 최종적으로 연산된 값인지 확인할 수 있다.
 
 #### 콘솔 (Console) 
 ![Console](./images/2018-12/chrome-dev-tool-101-console.png)
@@ -135,9 +135,37 @@ Slug: chrome-dev-tool-101
 ![Heavist job](./images/2018-12/chrome-dev-tool-101-performance-heavist.png)
 
 
+#### 애플리케이션 (Application)
+![Application](./images/2018-12/chrome-dev-tool-101-application.png)
+애플리케이션 탭에서는 웹 페이지가 웹 애플리케이션으로 기능하기 위해 필요한 내용들을 보여준다. 예전 웹 페이지에서는 오직 쿠키로만 정보를 저장하던 것과 달리, [다양한 웹 저장소](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/)가 추가되어 더 안전하고 빠른 형태로 정보를 읽고 쓸 수 있게 되었다.
+
+  - **선언** (Manifest)
+    - 일반적으로 `<link rel="manifest" href="/manifest.json">`로 선언된 [웹 애플리케이션과 관련된 선언](https://developer.mozilla.org/en-US/docs/Web/Manifest)을 표시한다.
+  - **서비스 워커** (Service Workers)
+    - 현재 페이지에서 사용중인 [서비스 워커](https://developers.google.com/web/fundamentals/primers/service-workers/) 정보를 표시한다.
+  - **로컬 저장소** (Local Storage)
+    - 키/값 쌍으로 손쉽게 데이터를 읽고 쓸 수 있다. 웹 브라우저마다 도메인별로 할당된 저장 공간의 크기가 다르지만 일반적으로 `10 MiB`까지 허용된다.
+    - 데이터는 도메인 단위로 공유되어, 같은 브라우저 내의 서로 다른 창/탭에서도 같은 데이터를 공유할 수 있다.
+
+            :::javascript
+            localStorage.setItem('key', 'value');
+            localStorage.getItem('key');
+            localStorage.removeItem('key');
+            localStorage.clear();
+
+  - **세션 저장소** (Session Storage)
+    - 로컬 저장소와 기능적으로는 같지만, 사용자가 명시적으로 삭제하지 않으면 지워지지 않는 로컬 저장소와는 달리, 세션 저장소는 브라우저가 닫힐 때 같이 제워진다. 
+    - 로컬 저장소와 달리, 같은 도메인일 경우에도 창/탭 단위로 서로 다른 데이터를 사용하게 된다.
+  - **인덱스DB** (IndexedDB)
+    - 많이 사용되는 관계형 데이터베이스를 브라우저에서도 사용할 수 있다. 일반적으로 `50 MiB`이상 사용할 경우에는 사용자 동의를 필요로 한다. 이전에는 이를 위해 `WebSQL`이 있었지만 [이제는 사용되지 않는다](https://softwareengineering.stackexchange.com/questions/220254/why-is-web-sql-database-deprecated).
+  - **쿠키** (Cookies)
+    - 현재 페이지에서 사용 중인 쿠키 정보를 보여준다.
+
+
 #### 보안 (Security)
 ![Security](./images/2018-12/chrome-dev-tool-101-security.png)
 페이지의 인증서와 페이지에서 참조하는 도메인의 인증서 등을 검사하고 그 결과를 보여준다. 모든 사이트에 HTTPS 연결이 강조되므로 이 탭을 통해 페이지에서 참조하는 리소스에 대해서도 확인하는 것이 필요하다.
+
 
 #### 감사 (Audits)
 ![Audits](./images/2018-12/chrome-dev-tool-101-audits.png)
