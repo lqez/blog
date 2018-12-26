@@ -2,6 +2,7 @@ Title: 2018년을 보내며
 Date: 2018-12-26
 Lang: ko
 Slug: end-of-2018
+Image: images/2018-12/2018-08.jpg
 
 2017년은 이전 회사 퇴사와 관련된 [회고](https://lqez.github.io/blog/the-end-is-just-another-beginning.html)를 적었었다. 그 후로 1년 동안은 아무것도 하지 않고 지내기로 마음먹었었는데, 정말 아무것도 하지 않은 기분이 들어 정리해보기로 했다.
 
