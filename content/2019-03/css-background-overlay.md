@@ -2,6 +2,7 @@ Title: CSS로 배경 이미지 위에 덧그리기
 Date: 2019-03-20
 Lang: ko
 Slug: css-background-overlay
+Image: images/2019-03/cbo_css-noise-part.png
 
 사진을 저장하는데 널리 사용되는 JPG 이미지 포맷은 8x8 픽셀로 화면을 쪼개 저장하는 방식을 사용하는데, 이 방식은 용량을 줄이기 위해 낮은 품질을 선택해 저장할 때 8x8 단위로 화면이 나뉘어 보이는 단점을 가진다.
 
