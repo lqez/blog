@@ -65,7 +65,7 @@ for row in qs.values_list():
 
 ```Python
 from django.db.models import Avg
-qs = Score.objects.values('subject_text') \
+qs = Score.objects.values('subject_name') \
                   .annotate(Avg('score'))
 
 for row in qs:
@@ -89,7 +89,7 @@ SELECT subject_name, AVG(score) FROM ScoreTable
 
 ```Python
 from django.db.models import Max
-qs = Score.objects.values('subject_text') \
+qs = Score.objects.values('subject_name') \
                   .annotate(Max('score'))
 
 for row in qs:
@@ -107,7 +107,7 @@ for row in qs:
 
 ```Python
 from django.db.models import Max
-qs = Score.objects.values('subject_text', 'student_name') \
+qs = Score.objects.values('subject_name', 'student_name') \
                   .annotate(Max('score'))
 
 for row in qs:
@@ -133,9 +133,9 @@ SELECT subject_name, student_name, MAX(score) FROM ScoreTable
 
 ```Python
 from django.db.models import Max
-qs = Score.objects.values('subject_text') \
+qs = Score.objects.values('subject_name') \
                   .annotate(Max('score')) \
-                  .values('subject_text', 'student_name', 'score__max')
+                  .values('subject_name', 'student_name', 'score__max')
 
 for row in qs:
     print(row)
