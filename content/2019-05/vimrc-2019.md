@@ -48,6 +48,6 @@ Slug: vimrc-2019
 
 ### 영상 링크
 
-<div class="videowrapper"><iframe class="video" src="http://www.youtube.com/embed/lNWuf48vgV4?autoplay=0" frameborder="0"></iframe></div>
+<div class="videowrapper"><iframe class="video" src="https://www.youtube.com/embed/lNWuf48vgV4?autoplay=0" frameborder="0"></iframe></div>
 
  - 유튜브 주소: <https://youtu.be/lNWuf48vgV4>
