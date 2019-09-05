@@ -838,7 +838,7 @@ Mocha의 테스트는 기본적으로 Node.js 런타임을 이용해 실행된�
 </html>
 ```
 
-웹 브라우저에 자바스크립트를 전달하기 위해서는 `test/test.js` 코드도 Babel을 통해 변환해야 한다. 이번에도 Webpack을 이용해 `dist/test.js` 파일을 번들링한다. 시작점(`--entry`)을 `test/test.js`로 지정하고, 번들링 결과(`--output`)는 `dist/test.js`로 출력해서 `dist/test.html`에서 불러 쓸 수 있도록 한다.
+웹 브라우저에 자바스크립트를 전달하기 위해서는 `test/test.js` 코드도 Babel을 통해 변환해야 한다. 이번에도 Webpack을 이용해 `dist/test.js` 파일을 번들링한다. [시작점(`--entry`)](https://webpack.js.org/concepts/entry-points/)을 `test/test.js`로 지정하고, [번들링 결과(`--output`)](https://webpack.js.org/configuration/output/)는 `dist/test.js`로 출력해서 `dist/test.html`에서 불러 쓸 수 있도록 한다.
 
 ```text
 $ npx -c "webpack --entry=./test/test.js --output=./dist/test.js"
