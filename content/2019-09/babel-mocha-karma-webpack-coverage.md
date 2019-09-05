@@ -524,7 +524,6 @@ exports["default"] = Animal;
 > Babel 설정에 대해 더 알아보기
 >
 >  - [Configure Babel](https://babeljs.io/docs/en/configuration)
->  - [Babel 7 + Node.js로 모던 자바스크립트 사용하기](https://blog.cometkim.kr/posts/start-modern-javascript-with-babel/)
 
 ### Babel + Webpack
 
@@ -1212,3 +1211,9 @@ module.exports = function(config) {
  - [BrowserStack](https://www.browserstack.com): 여러 데스크탑 운영체제 뿐 아니라 모바일 장치의 다양한 브라우저에서 테스트를 지원한다.
  - [SauceLabs](http://saucelabs.com): 다양한 환경에서 테스트를 진행하고, 화면 녹화 영상과 함께 결과를 보고한다.
 
+뿐만 아니라, 이제까지의 설정은 어디까지나 개발과 테스트 환경에서의 설정일 뿐이었다. 실제 서비스로 배포하기 위해서는 많은 최적화 과정이 필요하다. 이에 대해서는 각 모듈의 Production 항목에 대한 설정과 다양한 글을 참고하는 것이 좋겠다.
+
+ - [Webpack 4 in production](https://medium.com/@hpux/webpack-4-in-production-how-make-your-life-easier-4d03e2e5b081)
+ - [JavaScript SDK 성능개선 방법](https://engineering.linecorp.com/ko/blog/improve-javascript-sdk-performance/)
+ - [Webpack bundling 파일 사이즈 줄이기](https://blog.jungbin.kim/web/2019/02/16/js-decreaing-webpack-bundle.html)
+ - [Babel 7 + Node.js로 모던 자바스크립트 사용하기](https://blog.cometkim.kr/posts/start-modern-javascript-with-babel/)
