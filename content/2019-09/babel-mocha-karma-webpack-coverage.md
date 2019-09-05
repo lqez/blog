@@ -896,7 +896,7 @@ describe('Animal', () => {
 })
 ```
 
-테스트를 실행하기 전에, Webpack으로 변환하는 과정을 반드시 거쳐야 한다.
+아직까지는 테스트를 실행하기 전에 Webpack으로 변환하는 과정을 반드시 거쳐야 한다.
 
 ```text
 $ npx -c "webpack --entry=./test/test.js --output=./dist/test.js"
