@@ -155,6 +155,10 @@ export default class Animal {
 ```javascript
 import Animal from './Animal.js';
 
+const main = () => {
+…
+}
+
 window.onload = () => {
 …
 }
