@@ -3,9 +3,12 @@ Date: 2018-12-17
 Lang: ko
 Slug: chrome-dev-tool-101
 
+
 [썸머노트](https://github.com/summernote/summernote)를 개발하며 늘 사용하는 크롬 개발자 도구에 대해 한 번도 제대로 공부해본 적이 없었는데, 마침 아샬(@ahastudio)님이 [“아듀 2018”](https://adieu2018.ahastudio.com/)이라는 일종의 [Advent Calender](https://en.wikipedia.org/wiki/Advent_calendar)를 주최하는 것을 보고 재미있겠다 싶어 이걸 기회 삼아 크롬 개발자 도구의 기초 내용을 정리해보게 되었다.
 
 크롬 개발자 도구에 대한 정보는 <https://developers.google.com/web/tools/chrome-devtools/> 에서 얻는 것이 가장 정확하고 빠르다. 이 글에서는 웹 서비스를 개발하는데 있어 필수적인 기본 요소만을 간략하게 소개한다.
+
+[TOC]
 
 ### 개발자 도구 활성화
 

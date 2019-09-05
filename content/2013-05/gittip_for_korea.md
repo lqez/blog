@@ -18,24 +18,24 @@ Gittip
 /for/korea
 ----------
 
-Gittip 의 커뮤니티 기능이 약 [2주 전에 추가](https://github.com/gittip/www.gittip.com/commit/f2ca1fa1f3eb1c8cabe9b98bebc1e180dd669e61)되었는데, 이에 한국 파이썬 커뮤니티계의 아이돌(...) @hongminhee 님이 한국 개발자 커뮤니티([/for/korea](https://www.gittip.com/for/korea/))를 만들고, 가입을 요청하는 트윗을 올렸다.
+Gittip 의 커뮤니티 기능이 약 [2주 전에 추가](https://github.com/gittip/www.gittip.com/commit/f2ca1fa1f3eb1c8cabe9b98bebc1e180dd669e61)되었는데, 이에 한국 파이썬 커뮤니티계의 아이돌(...) t@hongminhee 님이 한국 개발자 커뮤니티([/for/korea](https://www.gittip.com/for/korea/))를 만들고, 가입을 요청하는 트윗을 올렸다.
 
-@hongminhee/status/333868284195770368
+t@hongminhee/status/333868284195770368
 
-해당 요청은 트위터나 페이스북을 통해 오픈소스에 관심이 있는 한국 개발자들에게 빠르게 전파되었고, 덕분에 몇 시간 지나지 않아 커뮤니티 구성 요건의 최소 인원인 150명에 가장 빠르게 도달하였다. 하지만 개발자 @whit537 도 이처럼 빨리 150명에 도달할 것이라 생각하지 못한 모양이다.
+해당 요청은 트위터나 페이스북을 통해 오픈소스에 관심이 있는 한국 개발자들에게 빠르게 전파되었고, 덕분에 몇 시간 지나지 않아 커뮤니티 구성 요건의 최소 인원인 150명에 가장 빠르게 도달하였다. 하지만 개발자 t@whit537 도 이처럼 빨리 150명에 도달할 것이라 생각하지 못한 모양이다.
 
-@whit537/status/333945787216175104
-@whit537/status/333948844951891969
+t@whit537/status/333945787216175104
+t@whit537/status/333948844951891969
 
-@whit537 은 다음과 같은 커밋을 통해, 'korea' 커뮤니티의 150명 도달에 긴급히 대비하였다.
+t@whit537 은 다음과 같은 커밋을 통해, 'korea' 커뮤니티의 150명 도달에 긴급히 대비하였다.
 
  - [#03429b3 Get barely ahead of Korea maybe](https://github.com/gittip/www.gittip.com/commit/03429b36850b163879afc64b35d160f8f3c13146)
  - [#c52b4c8 Korea beat us to this!](https://github.com/gittip/www.gittip.com/commit/c52b4c8d817e9c86453f118bbae72d355dedb0b3)
 
-그는 한국에서 왜 이렇게 많은 가입자가 발생했는지 궁금하였던 모양이다. 그에게 아이돌(...)을 소개시켜 주었는데, 결국 @hongminhee 님은 [freenode IRC](http://freenode.net/) 의 #gittip 채널에 들어가 개발자들과 얘기를 몇 마디 나누더니, 그세 개발에 참여하고 있는 것으로 보인다! ([pull #182](https://github.com/gittip/aspen-python/pull/182), [pull #183](https://github.com/gittip/aspen-python/pull/183)) 
+그는 한국에서 왜 이렇게 많은 가입자가 발생했는지 궁금하였던 모양이다. 그에게 아이돌(...)을 소개시켜 주었는데, 결국 t@hongminhee 님은 [freenode IRC](http://freenode.net/) 의 #gittip 채널에 들어가 개발자들과 얘기를 몇 마디 나누더니, 그세 개발에 참여하고 있는 것으로 보인다! ([pull #182](https://github.com/gittip/aspen-python/pull/182), [pull #183](https://github.com/gittip/aspen-python/pull/183)) 
 
-@whit537/status/333951758990733312
-@whit537/status/333952649152053248
+t@whit537/status/333951758990733312
+t@whit537/status/333952649152053248
 
 Small step for us
 -----------------

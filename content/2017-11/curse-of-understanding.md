@@ -34,5 +34,5 @@ Lang: ko
 
 나는 이런 문제들을 일반화하여 **이해의 저주(The Curse of Understanding)**라고 부르고 싶다.
 
-덧) 이 생각을 [트윗](https://twitter.com/lqez/status/759061524820299776)으로 썼더니, @tebica 님이 이에 공감하여 블로그 [포스팅](http://earlybird.kr/1938)을 남겼던 적이 있다. 
+덧) 이 생각을 [트윗](https://twitter.com/lqez/status/759061524820299776)으로 썼더니, t@tebica 님이 이에 공감하여 블로그 [포스팅](http://earlybird.kr/1938)을 남겼던 적이 있다. 
 그리고, 나는 아직 모나드를 이해하지 못했다.
