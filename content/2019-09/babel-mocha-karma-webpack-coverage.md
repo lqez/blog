@@ -1120,11 +1120,11 @@ All files  |    35.71 |      100 |       50 |    35.71 |                   |
 -----------|----------|----------|----------|----------|-------------------|
 ```
 
-웹 브라우저가 아닌 Node.js를 통해 테스트를 진행했으므로, `document`가 존재하지 않는 문제가 있다. 이제 Karma에서 Istanbul을 이용해 테스트와 커버리지를 통합해 진행해보자.
+웹 브라우저가 아닌 Node.js를 통해 테스트를 진행했으므로, `document`가 존재하지 않는 문제가 있다. 이제 Karma에서 Istanbul을 이용해 테스트와 커버리지를 함께 진행해보자.
 
 ### karma-coverage
 
-[`karma-coverage`](https://github.com/karma-runner/karma-coverage)는 Karma에서 Istanbul을 연동하기 위한 플러그인이다. 플러그인을 설치하고 `karma.conf.js`에 `reporters` 항목에 `coverage`를, `coverageReporter`에 `text`로 형식으로 출력하는 설정을 추가한다. Instanbul은 `text`, `html` 뿐 아니라 [다양한 보고서 형식](https://istanbul.js.org/docs/advanced/alternative-reporters/)을 지원한다.
+[`karma-coverage`](https://github.com/karma-runner/karma-coverage)는 Karma에서 Istanbul을 연동하기 위한 플러그인이다. 플러그인을 설치하고 `karma.conf.js`의 `reporters` 항목에 `coverage`를, `coverageReporter`에 `text`로 형식으로 출력하는 설정을 추가한다. Instanbul은 `text`, `html` 뿐 아니라 [다양한 보고서 형식](https://istanbul.js.org/docs/advanced/alternative-reporters/)을 지원한다.
 
 ```text
 $ npm i -D karma-coverage
