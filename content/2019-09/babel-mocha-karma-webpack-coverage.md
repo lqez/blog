@@ -1,4 +1,4 @@
-Title: Babel, Mocha, Karma and Webpack with coverage in depth
+Title: Babel, Mocha, Karma and Webpack with coverage in order
 Date: 2019-09-01
 Lang: ko
 Tags: Babel, Mocha, Karma, Webpack, Coverage, JavaScript, UnitTest
@@ -1123,7 +1123,7 @@ All files  |    35.71 |      100 |       50 |    35.71 |                   |
 
 ### karma-coverage
 
-[`karma-coverage`](https://github.com/karma-runner/karma-coverage)는 Karma에서 Istanbul을 연동하기 위한 플러그인이다. 플러그인을 설치하고 `karma.conf.js`의 `reporters` 항목에 `coverage`를, `coverageReporter`에 `text`로 형식으로 출력하는 설정을 추가한다. Instanbul은 `text`, `html` 뿐 아니라 [다양한 보고서 형식](https://istanbul.js.org/docs/advanced/alternative-reporters/)을 지원한다.
+[`karma-coverage`](https://github.com/karma-runner/karma-coverage)는 Karma에서 Istanbul을 연동하기 위한 플러그인이다. 플러그인을 설치하고 `karma.conf.js`의 `reporters` 항목에 `coverage`를, `coverageReporter`에 `text` 형식으로 출력하는 설정을 추가한다. Instanbul은 `text`, `html` 뿐 아니라 [다양한 보고서 형식](https://istanbul.js.org/docs/advanced/alternative-reporters/)을 지원한다.
 
 ```text
 $ npm i -D karma-coverage
