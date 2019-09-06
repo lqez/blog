@@ -21,7 +21,7 @@ Slug: babel-mocha-karma-webpack-coverage
  - [Mocha](#mocha): 자바스크립트 테스트 프레임워크.
  - [Karma](#karma): 작성한 테스트를 웹 브라우저로 테스트해 주는 테스트 러너.
  - [karma-webpack](#karma-webpack): Webpack 설정을 Karma에서 사용하기 위한 플러그인.
- - [Istanbul](#Istanbul): 자바스크립트 테스트 커버리지 도구.
+ - [Istanbul](#istanbul): 자바스크립트 테스트 커버리지 도구.
  - [karma-coverage](#karma-coverage): Karma에서 Istanbul을 사용하기 위한 플러그인.
 
 각각의 도구를 알아보기 전에 위와 같은 도구들이 나온 배경에 대해 알아보자.
