@@ -301,6 +301,8 @@ $ npm run build
 Webpack은 기본 설정으로 `src` 디렉터리 안에 `index.js` 파일이 있을 것을 가정하고 실행된다. 기존에 작성했던 `index.js`, `Animal.js` 파일을 `src` 디렉터리를 만들어 옮긴 후에 다시 Webpack을 실행해보자.
 
 ```text
+$ mkdir src
+$ mv *.js src/
 $ npm run build
 
 > webpack-sample@1.0.0 build /Users/lqez/Dev/webpack-sample
