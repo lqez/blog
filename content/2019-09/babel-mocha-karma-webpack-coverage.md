@@ -624,7 +624,7 @@ $ node test/test.src
 $
 ```
 
-아무 결과도 출력되지 않고 종료된다. 일반적으로 커맨드라인 프로그램은 정상 종료될 때 `0`을, 그 외의 경우는 다른 값을 [종료 상태(exit status)](https://www.tldp.org/LDP/abs/html/exit-status.html)로 내보낸다. 이 값을 통해 자동화 스크립트 등을 만들 때 테스트의 통과 여부를 확인할 수 있다. `bash` 등 대중적으로 많이 사용되는 쉘에서는 `$?` 변수에 종료 상태를 담아두니, 그 값을 출력해 확인해볼 수 있다.
+아무 결과도 출력되지 않고 종료된다. 일반적으로 커맨드라인 프로그램은 정상 종료될 때 `0`을, 그 외의 경우는 다른 값을 [종료 상태(exit status)](https://www.tldp.org/LDP/abs/html/exit-status.html)로 내보낸다. 이 값을 통해 자동화 스크립트 등을 만들 때 테스트의 통과 여부를 확인할 수 있다. `bash` 등 대중적으로 많이 사용되는 셸에서는 `$?` 변수에 종료 상태를 담아두니, 그 값을 출력해 확인해 볼 수 있다.
 
 ```text
 $ node test/test.src && echo $?
@@ -684,7 +684,7 @@ Mocha는 별도의 파일 이름을 지정하지 않으면 [기본적으로 `tes
 
 `throw`를 직접 호출하는 대신, 더 편리하게 사용할 수 있는 Node.js에 내장된 [`assert`](https://nodejs.org/api/assert.html) 모듈을 사용했다. 하지만 웹 브라우저에서는 [`console.assert()`](https://developer.mozilla.org/en-US/docs/Web/API/console/assert)를 사용하는 등 자바스크립트 런타임에 따라 다른 문법을 사용해야 하는 불편함이 있어, Mocha에서는 [`chai`](https://www.chaijs.com), [`expect.js`](https://github.com/Automattic/expect.js) 등 다른 [Assertion 기능을 포함한 모듈](https://mochajs.org/#assertions)과 함께 사용하는 것을 권장하고 있다.
 
-Mocha에서는 여러 형태의 [테스트 인터페이스](https://mochajs.org/#interfaces)를 제공한다. 대부분 테스트에 사용할 맥락을 유지하고 테스트 전/후에 불릴 함수를 제공하는 등 유사한 기능을 제공하므로, [`BDD`](https://en.wikipedia.org/wiki/Behavior-driven_development)에 속하는 `describe` 를 골라 테스트를 작성했다. 테스트가 정상적으로 수행되고, 종료 상태도 `0`으로 나오는 것을 확인할 수 있다. 이제 `Animal.js`를 포함하여 동물들이 제대로 짓는지(?) 확인해보자.
+Mocha에서는 여러 형태의 [테스트 인터페이스](https://mochajs.org/#interfaces)를 제공한다. 대부분 테스트에 사용할 맥락을 유지하고 테스트 전/후에 불릴 함수를 제공하는 등 유사한 기능을 제공하므로, [`BDD`](https://en.wikipedia.org/wiki/Behavior-driven_development)에 속하는 `describe` 를 골라 테스트를 작성했다. 테스트가 정상적으로 수행되고, 종료 상태도 `0`으로 나오는 것을 확인할 수 있다. 이제 `Animal.js`를 포함하여 동물들이 제대로 짖는지(?) 확인해보자.
 
 ###### test/test.js
 ```javascript
