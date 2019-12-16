@@ -24,6 +24,12 @@ Slug: one-day-dev
    보안과 관련된 부분은 문제가 없도록 편집할 예정이며, 공개하기 전 담당자에게 미리 영상을 전달하여 협의하에 필요한 부분을 추가로 편집합니다.
  - 근무 중 불가피하게 획득한 정보는 영상 공개분 외에 외부에 전달하거나 공개하지 않음을 약속드립니다.
 
+## Video
+
+<div class="videowrapper"><iframe class="video" src="https://www.youtube.com/watch?v=-bQztHgOqu4?autoplay=0" frameborder="0"></iframe></div>
+
+ - 참조 영상(유튜브): <https://www.youtube.com/watch?v=-bQztHgOqu4>
+
 ## Services
 
 제가 가지고 있는 기능은 다음과 같습니다.
