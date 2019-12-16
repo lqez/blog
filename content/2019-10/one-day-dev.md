@@ -26,7 +26,7 @@ Slug: one-day-dev
 
 ## Video
 
-<div class="videowrapper"><iframe class="video" src="https://www.youtube.com/watch?v=-bQztHgOqu4?autoplay=0" frameborder="0"></iframe></div>
+<div class="videowrapper"><iframe class="video" src="https://www.youtube.com/embed/-bQztHgOqu4?autoplay=0" frameborder="0"></iframe></div>
 
  - 참조 영상(유튜브): <https://www.youtube.com/watch?v=-bQztHgOqu4>
 
