@@ -53,22 +53,22 @@ Slug: chrome-dev-tool-101
 
 오른쪽 윈도우에서도 다음의 기능을 알아두면 좋다.
 
-###### 스타일 (Styles)
+##### 스타일 (Styles)
   - **필터** (Filter)
     ![Filter style](./images/2018-12/chrome-dev-tool-101-style-filter.png)
     - CSS 속성의 이름을 검색해볼 수 있다. 예를 들어, 검색 필터에 `margin`을 입력하면, 선택된 속성에 영향을 주는 여러 CSS 스타일에서 `margin` 값만 찾아볼 수 있다.
   - **`:hov`** (Toggle Element State)
     ![Toggle Element State](./images/2018-12/chrome-dev-tool-101-style-state.png)
-    - 앞서 언급했던 `Force state`와 마찬가지로 선택된 요소의 상태를 임의로 지정할 수 있다. 
+    - 앞서 언급했던 `Force state`와 마찬가지로 선택된 요소의 상태를 임의로 지정할 수 있다.
   - **`+`** (New Style Rule)
     ![New Style Rule](./images/2018-12/chrome-dev-tool-101-style-newrule.png)
     - 선택된 요소의 클래스 이름으로 스타일이 존재하지 않는다면 새로 만들어 지정할 수 있다. 소스 코드상에서 특정 선택자(selector)에 대해 스타일을 지정하지 않은 경우, 개발자 도구에서 임의로 만들어 지정해볼 때 편리하게 사용할 수 있다.
 
-###### 스타일 계산 결과 (Computed)
+##### 스타일 계산 결과 (Computed)
 ![Computed style](./images/2018-12/chrome-dev-tool-101-computed.png)
 선택된 요소에 적용된 최종 스타일을 확인할 수 있다. 스타일 필터와 마찬가지로 필터를 통해 원하는 스타일만 추려서 볼 수 있다. 특정 스타일을 확장하면 어떤 선택자들을 통해 최종적으로 연산된 값인지 확인할 수 있다.
 
-#### 콘솔 (Console) 
+#### 콘솔 (Console)
 ![Console](./images/2018-12/chrome-dev-tool-101-console.png)
 콘솔을 통해 페이지에 불려진 DOM과 자바스크립트와 상호 작용하며 디버깅할 수 있다. 기본 콘솔에서는 `verbose` 수준의 메세지는 표시되지 않아 출력 수준을 변경해야 볼 수 있는데, `verbose` 메세지는 개발 도구에서 유용한 내용을 알려주는 경우도 있으니 보는 것이 좋다. 좌상단의 아이콘을 선택해 사이드바를 꺼내면 콘솔 로그를 출력한 주체별로 또는 메세지 레벨별로 나눠서 볼 수 있다. 유닉스의 오래된 단축키 중 하나인 `Ctrl + L`을 이제까지의 콘솔 출력을 지우는 단축키로 사용할 수 있다.
 
@@ -115,7 +115,7 @@ Slug: chrome-dev-tool-101
     - 지정된 범위에 포함된 변수를 확인할 수 있다. 지역 변수와 전역 변수 외에도 현재 중단점의 클로저 변수도 확인할 수 있어 유용하다.
   - **중단점** (Breakpoint)
     - 설정된 중단점의 목록을 표시한다. 체크 박스를 해제하면 일시적으로 해당 중단점을 사용하지 않게 할 수 있다. 우클릭을 통해 컨텍스트 메뉴를 호출하여 모든 중단점을 지우거나 비활성화 시키는 등의 작업을 수행할 수 있다.
-  
+
 
 #### 네트워크 (Network)
 ![Network](./images/2018-12/chrome-dev-tool-101-network.png)
@@ -160,7 +160,7 @@ Slug: chrome-dev-tool-101
             localStorage.clear();
 
   - **세션 저장소** (Session Storage)
-    - 로컬 저장소와 기능적으로는 같지만, 사용자가 명시적으로 삭제하지 않으면 지워지지 않는 로컬 저장소와는 달리, 세션 저장소는 브라우저가 닫힐 때 같이 제워진다. 
+    - 로컬 저장소와 기능적으로는 같지만, 사용자가 명시적으로 삭제하지 않으면 지워지지 않는 로컬 저장소와는 달리, 세션 저장소는 브라우저가 닫힐 때 같이 제워진다.
     - 로컬 저장소와 달리, 같은 도메인일 경우에도 창/탭 단위로 서로 다른 데이터를 사용하게 된다.
   - **인덱스DB** (IndexedDB)
     - 많이 사용되는 관계형 데이터베이스를 브라우저에서도 사용할 수 있다. 일반적으로 `50 MiB`이상 사용할 경우에는 사용자 동의를 필요로 한다. 이전에는 이를 위해 `WebSQL`이 있었지만 [이제는 사용되지 않는다](https://softwareengineering.stackexchange.com/questions/220254/why-is-web-sql-database-deprecated).
@@ -175,7 +175,7 @@ Slug: chrome-dev-tool-101
 
 #### 감사 (Audits)
 ![Audits](./images/2018-12/chrome-dev-tool-101-audits.png)
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/)를 통한 페이지 검사 결과를 표시하고 저장할 수 있다. 기본적인 페이지의 성능과 [PWA](https://developers.google.com/web/progressive-web-apps/), [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization), [접근성](https://www.w3.org/standards/webdesign/accessibility)과 관련된 점수를 제공하므로, [Page speed](https://developers.google.com/speed/)와 함께 사용하여 품질 높은 페이지를 만드는데 참조하면 좋다. 
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/)를 통한 페이지 검사 결과를 표시하고 저장할 수 있다. 기본적인 페이지의 성능과 [PWA](https://developers.google.com/web/progressive-web-apps/), [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization), [접근성](https://www.w3.org/standards/webdesign/accessibility)과 관련된 점수를 제공하므로, [Page speed](https://developers.google.com/speed/)와 함께 사용하여 품질 높은 페이지를 만드는데 참조하면 좋다.
 
 ----
 
@@ -186,7 +186,7 @@ Slug: chrome-dev-tool-101
   - **도구 위치** (Dock side)
     - 개발자 도구를 별도의 창으로 분리하거나, 같은 창의 특정 위치로 보낼 수 있다.
   - **콘솔 창 보이기/숨기기** (Show/Hide console drawer)
-    - 콘솔과 추가 기능을 별도로 표시하는 창을 보이거나 숨길 수 있다. 
+    - 콘솔과 추가 기능을 별도로 표시하는 창을 보이거나 숨길 수 있다.
     - 단축키: `Esc`
   - **검색** (Search)
     - 페이지를 표시하는데 쓰인 파일과 개발자 도구에 등록된 파일 시스템, 코드 조각 등의 모든 파일을 대상으로 검색을 수행한다.
@@ -200,7 +200,7 @@ Slug: chrome-dev-tool-101
     - 개발자 도구의 기본 탭에 표시된 기능 외에 다른 기능들을 추가로 사용할 수 있다.
 
 추가 기능에는 다음 항목이 있으며 각 항목에 대한 자세한 설명은 아래 목록의 링크와 [구글 크롬 개발자 도구 도움말](https://developers.google.com/web/tools/chrome-devtools/)을 참조한다.
- 
+
   - [Animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations): CSS 애니메이션을 타임라인을 따라 추적하고 캡춰할 수 있다.
   - [Changes](https://developers.google.com/web/updates/2018/01/devtools#changes): 소스 코드 변경 사항을 추적한다.
   - [Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage): 해당 페이지에서 파일별로 얼마나 많은 부분을 실제로 사용했는지 표시.
@@ -208,7 +208,7 @@ Slug: chrome-dev-tool-101
   - [Network conditions](https://developers.google.com/web/tools/chrome-devtools/network-performance/network-conditions): 네트워크(Network)의 트래픽 조절(Throttling)과 같은 기능.
   - [Request blocking](https://developers.google.com/web/updates/2017/04/devtools-release-notes#block-requests): 패턴 매칭을 통해 특정 요청만 제한하는 테스트가 가능하다.
   - [Sensors](https://developers.google.com/web/tools/chrome-devtools/device-mode/device-input-and-sensors): 모바일 장치의 위치 정보와 가속도 센서를 에뮬레이션.
- 
+
 ----
 
 ### 설정 (Settings)
