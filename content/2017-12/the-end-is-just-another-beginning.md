@@ -22,7 +22,7 @@ Image: images/2017-12/last-moment-mba.jpg
 
 ----
 
-#### 공동창업은 좋은가
+### 공동창업은 좋은가
 
 기본적으로 좋다고 생각한다. 일단 창업하고 나면 기쁜 일보다는 힘든 일이 훨씬 더 많기 마련인데,
 정말 힘들 때 등을 맞대고 고민을 함께할 수 있는 상대는 배우자나 친구보다는, 아무래도 맥락을 더 많이 이해하는 다른 공동창업자일 수밖에 없다.
@@ -61,8 +61,8 @@ Image: images/2017-12/last-moment-mba.jpg
 
 영화 매트릭스에 [이런 대사](https://www.youtube.com/watch?v=5wqd-ETXrOw)가 있다.
 
-> ### “Everything that has a beginning has an end.”
+> “Everything that has a beginning has an end.”
 
 좋아하는 문장이지만 더 좋아하는 이 문장을 덧붙이고 싶다.
 
-> ### “The end is just another beginning.”
+> “The end is just another beginning.”

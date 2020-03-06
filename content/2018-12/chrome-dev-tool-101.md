@@ -10,7 +10,7 @@ Slug: chrome-dev-tool-101
 
 [TOC]
 
-### 개발자 도구 활성화
+## 개발자 도구 활성화
 
 ![Chrome menu](./images/2018-12/chrome-dev-tool-101-menu.png)
 개발자 도구는 크롬 메뉴바에서 개발자 도구를 선택해서 활성화 할 수 있다.
@@ -22,21 +22,21 @@ Slug: chrome-dev-tool-101
 
 ----
 
-#### 요소 선택
+### 요소 선택
 
 ![Select element](./images/2018-12/chrome-dev-tool-101-select.png)
 화면에서 직접 요소를 선택할 수 있다.
 
   - 단축키: `⌘ + Shift + C` 또는 `Ctrl + Shift + C`
 
-#### 장치 변경
+### 장치 변경
 
 ![Device toggle](./images/2018-12/chrome-dev-tool-101-device.png)
 현재 크롬이 동작하는 장치가 아닌 다른 휴대 장치와 같은 화면 크기나 설정을 가지도록 변경하여 여러 환경을 테스트할 수 있도록 한다. 특히 안드로이드와 아이폰 등의 여러 모바일 장치의 값이 미리 등록되어 있어, 모바일 장치를 가정하고 테스트할 때 유용하다.
 
   - 단축키: `⌘ + Shift + M` 또는 `Ctrl + Shift + M`
 
-#### 요소 (Elements)
+### 요소 (Elements)
 
 [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)(문서 객체 모델, The Document Object Model, 이하 DOM)을 탐색하고 CSS를 확인하며 변경할 수 있다. 주로 화면에 보이는 내용을 확인하고 편집할 때 사용한다. 화면 왼쪽의 DOM을 통해 요소를 탐색할 수 있고, 오른쪽에서는 현재 적용된 CSS 목록과 계산된(computed) 스타일, 이벤트, DOM에 설정된 중단점(breakpoint) 등을 확인할 수 있다.
 
@@ -53,7 +53,7 @@ Slug: chrome-dev-tool-101
 
 오른쪽 윈도우에서도 다음의 기능을 알아두면 좋다.
 
-##### 스타일 (Styles)
+#### 스타일 (Styles)
   - **필터** (Filter)
     ![Filter style](./images/2018-12/chrome-dev-tool-101-style-filter.png)
     - CSS 속성의 이름을 검색해볼 수 있다. 예를 들어, 검색 필터에 `margin`을 입력하면, 선택된 속성에 영향을 주는 여러 CSS 스타일에서 `margin` 값만 찾아볼 수 있다.
@@ -64,11 +64,11 @@ Slug: chrome-dev-tool-101
     ![New Style Rule](./images/2018-12/chrome-dev-tool-101-style-newrule.png)
     - 선택된 요소의 클래스 이름으로 스타일이 존재하지 않는다면 새로 만들어 지정할 수 있다. 소스 코드상에서 특정 선택자(selector)에 대해 스타일을 지정하지 않은 경우, 개발자 도구에서 임의로 만들어 지정해볼 때 편리하게 사용할 수 있다.
 
-##### 스타일 계산 결과 (Computed)
+#### 스타일 계산 결과 (Computed)
 ![Computed style](./images/2018-12/chrome-dev-tool-101-computed.png)
 선택된 요소에 적용된 최종 스타일을 확인할 수 있다. 스타일 필터와 마찬가지로 필터를 통해 원하는 스타일만 추려서 볼 수 있다. 특정 스타일을 확장하면 어떤 선택자들을 통해 최종적으로 연산된 값인지 확인할 수 있다.
 
-#### 콘솔 (Console)
+### 콘솔 (Console)
 ![Console](./images/2018-12/chrome-dev-tool-101-console.png)
 콘솔을 통해 페이지에 불려진 DOM과 자바스크립트와 상호 작용하며 디버깅할 수 있다. 기본 콘솔에서는 `verbose` 수준의 메세지는 표시되지 않아 출력 수준을 변경해야 볼 수 있는데, `verbose` 메세지는 개발 도구에서 유용한 내용을 알려주는 경우도 있으니 보는 것이 좋다. 좌상단의 아이콘을 선택해 사이드바를 꺼내면 콘솔 로그를 출력한 주체별로 또는 메세지 레벨별로 나눠서 볼 수 있다. 유닉스의 오래된 단축키 중 하나인 `Ctrl + L`을 이제까지의 콘솔 출력을 지우는 단축키로 사용할 수 있다.
 
@@ -90,7 +90,7 @@ Slug: chrome-dev-tool-101
             > console.timeEnd('timer1');
             timer1: 3659.787109375ms
 
-#### 소스 (Sources)
+### 소스 (Sources)
 ![Source](./images/2018-12/chrome-dev-tool-101-source.png)
 소스 메뉴에서는 해당 페이지에 로드된 파일들의 목록을 보며 중단점을 설정하며 본격적인 자바스크립트 디버깅이 가능하다.
 
@@ -117,7 +117,7 @@ Slug: chrome-dev-tool-101
     - 설정된 중단점의 목록을 표시한다. 체크 박스를 해제하면 일시적으로 해당 중단점을 사용하지 않게 할 수 있다. 우클릭을 통해 컨텍스트 메뉴를 호출하여 모든 중단점을 지우거나 비활성화 시키는 등의 작업을 수행할 수 있다.
 
 
-#### 네트워크 (Network)
+### 네트워크 (Network)
 ![Network](./images/2018-12/chrome-dev-tool-101-network.png)
 페이지를 표시하는데 필요한 네트워크 작업에 대한 결과를 시간순으로 표시한다. 페이지 로드가 느리다면 이 탭을 통해 그 원인을 파악할 수 있다.
 
@@ -133,7 +133,7 @@ Slug: chrome-dev-tool-101
 ![Request and response header](./images/2018-12/chrome-dev-tool-101-network-header.png)
 
 
-#### 성능 (Performance)
+### 성능 (Performance)
 ![Performance](./images/2018-12/chrome-dev-tool-101-performance.png)
 네트워크 탭을 통해 원격지와 어떻게 데이터를 요청하고 받았는지 확인하며 최적화를 했다면, 성능 탭에서는 자바스크립트 실행과 화면 그리기를 추적하여 어떤 부분이 웹 애플리케이션을 지연시키고 있는지 확인할 수 있다. 녹화(Record) 버튼을 누른 뒤 페이지를 로드하거나 자바스크립트 작업을 수행한 후, 정지하면 그 사이에 발생한 자바스크립트의 함수별 호출수와 사용된 시간 등을 확인할 수 있다.
 
@@ -141,7 +141,7 @@ Slug: chrome-dev-tool-101
 ![Heavist job](./images/2018-12/chrome-dev-tool-101-performance-heavist.png)
 
 
-#### 애플리케이션 (Application)
+### 애플리케이션 (Application)
 ![Application](./images/2018-12/chrome-dev-tool-101-application.png)
 애플리케이션 탭에서는 웹 페이지가 웹 애플리케이션으로 기능하기 위해 필요한 내용들을 보여준다. 예전 웹 페이지에서는 오직 쿠키로만 정보를 저장하던 것과 달리, [다양한 웹 저장소](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/)가 추가되어 더 안전하고 빠른 형태로 정보를 읽고 쓸 수 있게 되었다.
 
@@ -168,18 +168,18 @@ Slug: chrome-dev-tool-101
     - 현재 페이지에서 사용 중인 쿠키 정보를 보여준다.
 
 
-#### 보안 (Security)
+### 보안 (Security)
 ![Security](./images/2018-12/chrome-dev-tool-101-security.png)
 페이지의 인증서와 페이지에서 참조하는 도메인의 인증서 등을 검사하고 그 결과를 보여준다. 모든 사이트에 HTTPS 연결이 강조되므로 이 탭을 통해 페이지에서 참조하는 리소스에 대해서도 확인하는 것이 필요하다.
 
 
-#### 감사 (Audits)
+### 감사 (Audits)
 ![Audits](./images/2018-12/chrome-dev-tool-101-audits.png)
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/)를 통한 페이지 검사 결과를 표시하고 저장할 수 있다. 기본적인 페이지의 성능과 [PWA](https://developers.google.com/web/progressive-web-apps/), [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization), [접근성](https://www.w3.org/standards/webdesign/accessibility)과 관련된 점수를 제공하므로, [Page speed](https://developers.google.com/speed/)와 함께 사용하여 품질 높은 페이지를 만드는데 참조하면 좋다.
 
 ----
 
-### 추가 기능 (More tools)
+## 추가 기능 (More tools)
 ![More tools](./images/2018-12/chrome-dev-tool-101-moretools.png)
 개발자 도구의 기본 탭의 오른쪽 끝 메뉴(`⋮`)를 클릭하면 추가 개발자 도구를 확인할 수 있다.
 
@@ -211,7 +211,7 @@ Slug: chrome-dev-tool-101
 
 ----
 
-### 설정 (Settings)
+## 설정 (Settings)
 ![Settings](./images/2018-12/chrome-dev-tool-101-settings.png)
 개발자 도구 자체에 대한 다양한 설정이 제공되며, 주요 기능은 다음과 같다.
 
