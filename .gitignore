@@ -13,6 +13,7 @@ var
 sdist
 develop-eggs
 .installed.cfg
+__pycache__
 
 # Installer logs
 pip-log.txt
@@ -29,8 +30,6 @@ pip-log.txt
 
 # Pelican
 output
-themes
-plugins
 *.pid
 
 # OS X
@@ -38,3 +37,5 @@ plugins
 
 # pyenv
 .python-version
+.direnv
+.envrc

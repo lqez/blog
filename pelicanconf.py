@@ -3,25 +3,16 @@
 
 #AUTHOR = u"lqez"
 EMAIL = "ez.amiryo@gmail.com"
-SITENAME = u"Feature creep designer"
+SITENAME = "Feature creep designer"
+DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 #SITEURL = '//lqez.github.io/blog'
 
 TIMEZONE = 'Asia/Seoul'
 
 DEFAULT_LANG = 'ko'
-THEME = '42signals-pelican-theme'
+THEME = './themes/42signals-pelican-theme'
 
-# Social widget
-#LINKS = (('twitter', 'http://twitter.com/lqez'),
-#          ('facebook', 'http://facebook.com/ez.amiryo'),
-#          ('soundcloud', 'http://soundcloud.com/lqez'),
-#          ('github', 'http://github.com/lqez'),)
-#
-#SOCIAL = (('twitter', 'http://twitter.com/lqez'),
-#          ('facebook', 'http://facebook.com/ez.amiryo'),
-#          ('soundcloud', 'http://soundcloud.com/lqez'),
-#          ('github', 'http://github.com/lqez'),)
-
+MARKUP = ('md',)
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.toc': {'baselevel': 2, 'toc_depth': '2-5'},
