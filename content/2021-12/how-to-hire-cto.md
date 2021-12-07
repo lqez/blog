@@ -1,4 +1,4 @@
-Title: CTO는 어떻게 뽑을까
+Title: CTO를 어떻게 뽑을까
 Date: 2021-12-03
 Lang: ko
 Tags: CTO
@@ -12,7 +12,7 @@ Slug: how-to-hire-cto
   - [스타트업에서 CTO의 일, 이호성](https://brunch.co.kr/@leehosung/40)
   - [CTO는 무엇을 해야하나?, Amr Awadallah (번역 Minul)](https://www.mimul.com/blog/what-does-a-cto-do/)
 
-하지만 다른 책임급 직책과 마찬가지로 어떤 과정을 통해 이 역할을 맡게 되며, 어디서 어떤 방식으로 길러지는지, 또 어떻게 채용할 수 있는지에 대해 다룬 글은 찾아보기 힘들다.
+하지만 다른 임원급 직책과 마찬가지로 어떤 과정을 통해 이 역할을 맡게 되며, 또 어떻게 채용할 수 있는지에 대해 다룬 글은 찾아보기 힘들다.
 
 우선 현재 일하고 있는 CTO들은 어떤 사람인지 살펴보자.
 
