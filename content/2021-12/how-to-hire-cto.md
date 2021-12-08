@@ -1,7 +1,7 @@
 Title: CTO를 어떻게 뽑을까
 Date: 2021-12-03
 Lang: ko
-Tags: CTO
+Tags: CTO, YAGNI
 Slug: how-to-hire-cto
 
 
@@ -10,7 +10,7 @@ Slug: how-to-hire-cto
   - [스타트업에서 CTO의 역할, Jeon Hosang](https://www.popit.kr/%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85%EC%97%90%EC%84%9C-cto%EC%9D%98-%EC%97%AD%ED%95%A0/)
   - [스타트업에서 CTO의 역할, Jong-Ha Ahn](https://www.mrlatte.net/blog/2020/01/13/startup-cto.html)
   - [스타트업에서 CTO의 일, 이호성](https://brunch.co.kr/@leehosung/40)
-  - [CTO는 무엇을 해야하나?, Amr Awadallah (번역 Minul)](https://www.mimul.com/blog/what-does-a-cto-do/)
+  - [CTO는 무엇을 해야하나?, Amr Awadallah (번역 Mimul)](https://www.mimul.com/blog/what-does-a-cto-do/)
 
 하지만 다른 임원급 직책과 마찬가지로 어떤 과정을 통해 이 역할을 맡게 되며, 또 어떻게 채용할 수 있는지에 대해 다룬 글은 찾아보기 힘들다.
 
